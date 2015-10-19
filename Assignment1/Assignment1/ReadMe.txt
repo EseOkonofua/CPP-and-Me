@@ -2,11 +2,7 @@
     CONSOLE APPLICATION : Assignment1 Project Overview
 ========================================================================
 
-AppWizard has created this Assignment1 application for you.
-
-This file contains a summary of what you will find in each of the files that
-make up your Assignment1 application.
-
+Assignment 1: Insult generator. The purpose of this assignment was to use C++ file I/O to read a file containing 3 columns of shakespearean words that can be combined in various ways to generate insults.
 
 Assignment1.vcxproj
     This is the main project file for VC++ projects generated using an Application Wizard.
