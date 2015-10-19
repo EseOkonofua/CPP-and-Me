@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+      <div id="header">
+          uTunes
+          <div class="windowButtons">X</div>
+          <div class="windowButtons">[]</div>
+          <div class="windowButtons">-</div>      
+      </div>
+      <div id="midSection">
+          <div class="page">
+              <div class="pageNav">
+                <a href="#"  >Library</a>
+                  <a href="#" style="border-bottom:2px solid #F9D127" >Tags</a>
+                  <!--<a href="#" style="float:right"><img style ="float:left;height:10px;width:10px"src="https://cdn2.iconfinder.com/data/icons/flat-web/512/717008-tags-128.png"/>ROCK <small>x</small></a>
+                  <a href="#" style="float:right"><img style="float:left;height:10px;width:10px" src="https://cdn2.iconfinder.com/data/icons/flat-web/512/717008-tags-128.png" />RAP <small>x</small></a>  -->
+              </div>
+              <div class="pageView">
+                  <div class="pageViewTitle">
+                      
+                      <img src="https://cdn2.iconfinder.com/data/icons/flat-web/512/717008-tags-128.png" />
+                      Tags
+                      <input type="text" placeholder="Search" />
+  <!-- <img src="https://cdn1.iconfinder.com/data/icons/literature/154/books-stack-book-literature-128.png"/>
+                      Library
+                      <input type="text" placeholder="Search" /> -->
+                  </div>         
+                  <div class="pageViewList">
+                      <div style="text-align:center"class="pageHeader">
+                           <!--<div class=" PageViewListHeaders">Song</div>
+                          <div class=" PageViewListHeaders">Artist</div>
+                          <div class=" PageViewListHeaders">Album</div>
+                          <div class=" PageViewListHeaders">Genre</div> -->
+                          Tags
+                          <span style="float:right">Create new tag</span>
+                          <img class="ic" style="float:right;height:65%;width:30px" src="https://cdn2.iconfinder.com/data/icons/picons-basic-1/57/basic1-171_add_new_plus-128.png" />
+                      </div>
+                      <div class="pageItems">
+                          <div class="tags">CALM</div>
+                          <div class="tags">ROCK</div>
+                          <div class="tags">RAP</div>
+                          <div class="tags">TRNCE</div>
+                          <div class="tags">ZOO</div>
+                          <div class="tags">CREEPY</div>
+                          <div class="tags">ROCK</div>
+                          <div class="tags">HPOP</div>
+                          <div class="tags">POP</div>
+                          <div class="tags">KPOP</div>
+                          <div class="tags">DANCE</div>
+                          <div class="tags">MDTTE</div>
+                          <div class="tags">DNCHALL</div>
+                          <div class="tags">EDM</div>
+                          <div class="tags">REMIX</div>
+                          <div class="tags">MASHUP</div>
+                          <div class="tags">NEOSOUL</div>
+                          <div class="tags">SOUL</div>
+                          <div class="tags">JAZZ</div>
+                          <div class="tags">PUMPUP</div>
+                          <div class="tags">WORKOUT</div>
+                          <div class="tags">MTVTN</div>
+                          <div class="tags">DIRTY</div>
+                          <!--<div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              10 Bands<br />Drake<br />If you're reading this it's too...<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton"/>
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Energy<br />Drake<br />If you're reading this it's too...<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Ayo<br />Chris Brown,Tyga<br />Ayo<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Wu-Tang Forever<br />Drake<br />Nothing was the same<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              P.Y.T<br />Micheal Jackson<br />Thriller(Deluxe)<br />Pop
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              These Walls<br />Kendrick Lamar,Bilal,...<br />To Pimp A Butterfly<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Hold Yuh<br />Gyptian<br />Hold Yuh<br />Dance Hall
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Who do you love?<br />YG,Drake<br />My Krazy Life(Deluxe)<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Nobody Has to know<br />Kranium,Ty Dolla $ign<br />Nobody has to Know<br />Hip Hop
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Actin Crazy<br />Action Bronson<br />Actin Crazy<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item"><img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Right Hand<br />Drake<br />Right Hand<br />Hip Hop
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Lifestyle<br />Rich Gang, Young Thug,...<br />Lifestyle<br />Hip Hop
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div>
+                          <div class="Item">
+                              <img src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/settings-128.png" class="settings" />
+                              Chum<br />Earl Sweatshirt<br />Doris<br />Rap
+                              <img src="https://cdn4.iconfinder.com/data/icons/outline-2/64/button-circle-play-24.png" class="playButton" />
+                          </div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="queueBar">
+              <div class="nowPlaying">
+                  <img style="width:100%;height:100%" src="/Images/backup.jpg" />
+                  <div class="songInfo">
+                      <span>
+                          Artist: Dej Loaf <br />
+                          Featuring: Big Sean <br />
+                          Album: #AndSeeThatsTheThing
+                      </span>
+                  </div>
+              </div>
+              <div class="songTitle">
+                  Back Up - Dej Loaf, Big Sean
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/ifurreadingthis.png" />
+                  <div class="queueSong">10 Bands<br /><small>Drake</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/blessings.jpg" />
+                  <div class="queueSong">Blessings<br /><small>Big Sean</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/ifurreadingthis.png" />
+                  <div class="queueSong">Star67<br /><small>Drake</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/elcamino.jpg" />
+                  <div class="queueSong">El Camino<br /><small>The Black Keys</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/ifurreadingthis.png" />
+                  <div class="queueSong">You & The 6<br /><small>Drake</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+              <div class="queueItem">
+                  <div class="cancelSong">X</div>
+                  <img class="queueImage" src="/Images/whenuwere.jpg" />
+                  <div class="queueSong">When you...<br /><small>The Killers</small></div>
+                  <div class="queueRank"><span style="width:100%;float:left">&#9650;</span><span style="width:100%;float:left">&#9660;</span></div>
+              </div>
+          </div>
+          <div class="tagBar">
+              <div class="closeTagBar">&#9654;</div>
+              <div class="tagSection">
+                  <div style="text-align:center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;height:20px"> Playing tags</div>
+                  <div class="tagList">
+                      <div class="tags"><span style="width:10%">x</span> RAP </div>
+                      <div class="tags"><span style="width:10%">x</span> DANCE</div>
+                      <div class="tags"><span style="width:10%">x</span> ROCK</div>
+                      <div class="tags"><span style="width:10%">x</span> ELEC</div>
+                      <div class="tags"><span style="width:10%">x</span> FUNK</div>
+                      <div class="tags"><span style="width:10%">x</span> JAZZ</div>
+                      <div class="tags"><span style="width:10%">x</span> DRAKE</div>
+                      <div class="tags"><span style="width:10%">x</span>INDIE</div>
+                      <div class="tags"><span style="width:10%">x</span> CALM</div>
+                      <div class="tags"><span style="width:10%">x</span>UPBEAT</div>
+                      <div class="tags"><span style="width:10%">x</span>TURNT</div>
+                      
+                  </div>
+                  <div id="addTags">+ Add tags <img style="float:right" class="icon" src="https://cdn3.iconfinder.com/data/icons/faticons/32/sync-01-128.png" /></div>
+              </div>
+          </div>
+      </div>
+      <div id="musicTracker">
+            <img class=" musicTrackerButton" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-122_media_rewind_back-128.png" />
+            <img class="musicTrackerButton" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-124_media_play-128.png"/>
+            <img class="musicTrackerButton" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-125_media_fast_forward-128.png"/>
+          <div style="float:left;width:80px;height:100%">2:10/3:00</div>
+            <div style="width:1000px;height:100%;float:left;background-color:#cccccc">
+                <div style="width:70%;height:100%;background-color:#F9D127;border-right:1px solid grey"></div>
+            </div>
+            <img class="musicTrackerButton" style="margin-left:12px;" src="https://cdn2.iconfinder.com/data/icons/picons-basic-1/57/basic1-094_volume-128.png "/>
+          
+      </div>
+  </div>
+</body>
+</html>
