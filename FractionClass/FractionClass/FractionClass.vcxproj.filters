@@ -24,12 +24,15 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fraction_13eio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FractionClass.cpp">
+    <ClCompile Include="fraction_13eio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

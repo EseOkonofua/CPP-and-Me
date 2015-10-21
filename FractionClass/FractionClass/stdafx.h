@@ -6,9 +6,10 @@
 #pragma once
 
 #include "targetver.h"
-
+#include "fraction_13eio.h"
 #include <stdio.h>
 #include <tchar.h>
+
 
 
 
