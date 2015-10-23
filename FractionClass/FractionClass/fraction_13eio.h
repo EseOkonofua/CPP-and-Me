@@ -14,7 +14,7 @@ using namespace std;
 class Fraction {
 	int nmrtr; //numerator value
 	int dnmntr; // denominator value 
-	int GCD(const int& numerator,const int& denominator) const; //Helper function to find the greatest common denominator of 2 values
+	int GCD(const int& numerator,const int& denominator) const; //Helper function to find the greatest common denominator of 2 values used to normalize values;
 public:
 	Fraction(); //Default constructor 
 	Fraction(const int& numerator); // 1 Parameter constructor...Whole Number
@@ -24,7 +24,7 @@ public:
 	
 
 	//Unary negation
-	Fraction operator-(const Fraction& fraction);
+	Fraction operator-();
 
 //Binary operators 
 	friend Fraction operator+(const Fraction& lFraction, const Fraction& rFraction);
@@ -51,10 +51,15 @@ public:
 	//cout 
 	friend ostream& operator<<(ostream& out, const Fraction& fraction);
 	//cin
-	friend ostream& operator>>(ostream& in, const Fraction& fraction);
+	friend istream& operator>>(istream& in, Fraction& fraction);
 };
 
-
+class FractionException { //Exception class to catch 0 denominator fractions
+	string message;
+public:
+	FractionException(const string& message);
+	string& what();
+};
 
 
 
