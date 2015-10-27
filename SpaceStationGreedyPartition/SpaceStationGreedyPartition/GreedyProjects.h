@@ -22,13 +22,13 @@ public:
 class ResearchPeriod { //Object holding research specifications. e.g. # Of Projects,Research critical period, Optimal List of Projects 
 	string document;
 	vector<Project> projects;
-	vector<Project> optimalProjects;
+	vector<Project> sortProjects(vector<Project>& projects); //Sorts projects based on finish time in descending order
+	vector<Project> merge(vector<Project>& leftProject, vector<Project>& rightProject);
 	int reasearchStartTime;
 	int researchEndTime;
 	int numOfProjects;
 public:
 	ResearchPeriod(const string& document); //Constructor with document holding research specifications
-	void sortProjects(); //Sorts projects based on finish time
 	vector<Project> optimal(); //Finds optimal projects to do 
 	vector<Project> getProjects();
 	int getResearchStartTime();

@@ -5,12 +5,10 @@
 #include "GreedyProjects.h"
 int main()
 {
-	ResearchPeriod period = ResearchPeriod("SpaceStation.txt");
-	cout << period.getResearchStartTime() << endl;
-	cout << period.getResearchEndTime() << endl << endl;
-
+	ResearchPeriod period = ResearchPeriod("SpaceV2.txt");
 	vector<Project> projects = period.getProjects();
-	for (auto& i : projects)
+	vector<Project> optimal = period.optimal();
+	for (auto& i : optimal)
 		cout << i;
 
     return 0;
@@ -70,13 +68,77 @@ ResearchPeriod::ResearchPeriod(const string & document):document(document)
 		while (getline(myfile, line)) {
 			projects.push_back(getProject(line));
 		}
+		projects = sortProjects(projects);
 		myfile.close();
 	}
 }
 
-void ResearchPeriod::sortProjects()
+vector<Project> ResearchPeriod::optimal()
 {
+	vector<Project> optimalResults;
+	Project selectedProject = projects[0]; //Point to first project
+	for (auto& i : projects) {
+		if (i.Fi() >= researchEndTime && i.Si() <= selectedProject.Si())
+			selectedProject = i;
+		else if (i.Fi() < researchEndTime) {
+			optimalResults.push_back(selectedProject);
+			break;
+		}	
+	}
+
+	for (int i= 0; selectedProject.Si() > reasearchStartTime ; i++) {
+		if (projects[i].Si() < selectedProject.Si() && projects[i].Fi() >= optimalResults.back().Si()) 
+			selectedProject = projects[i];
+		else if (projects[i].Fi() < optimalResults.back().Si()) {
+			optimalResults.push_back(selectedProject);
+			selectedProject = projects[i];
+		}
+		else if (projects[i].Si() <= reasearchStartTime) 
+			optimalResults.push_back(projects[i]);	
+	}
+	optimalResults.push_back(selectedProject);
+	return optimalResults;
+}
+
+vector<Project> ResearchPeriod::sortProjects(vector<Project>& projects)
+{
+	if (projects.size() <= 1)
+		return projects;
+	else {
+		vector<Project> projectLeft(projects.begin(), projects.begin()+ projects.size() / 2);
+		vector<Project> projectRight(projects.begin() + projects.size() / 2, projects.end());
+		projectLeft = sortProjects(projectLeft);
+		projectRight = sortProjects(projectRight);
+
+		return merge(projectLeft, projectRight);
+	}
+
 	
+
+}
+
+vector<Project> ResearchPeriod::merge(vector<Project>& leftProject, vector<Project>& rightProject)
+{
+	vector<Project> result;
+	while (leftProject.size() != 0 && rightProject.size() != 0) {
+		if (leftProject[0].Fi() >= rightProject[0].Fi()) {
+			result.push_back(leftProject[0]);
+			leftProject.erase(leftProject.begin());
+		}
+		else {
+			result.push_back(rightProject[0]);
+			rightProject.erase(rightProject.begin());
+		}
+	}
+	while (leftProject.size() != 0) {
+		result.push_back(leftProject[0]);
+		leftProject.erase(leftProject.begin());
+	}
+	while (rightProject.size() != 0) {
+		result.push_back(rightProject[0]);
+		rightProject.erase(rightProject.begin());
+	}
+	return result;
 }
 
 vector<Project> ResearchPeriod::getProjects()
