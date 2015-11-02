@@ -1,0 +1,61 @@
+All the projects read from the file:
+Project Number: 23| Start Time: 97| Finish Time: 116| Project Cost: 19
+Project Number: 5| Start Time: 93| Finish Time: 111| Project Cost: 18
+Project Number: 32| Start Time: 86| Finish Time: 99| Project Cost: 13
+Project Number: 6| Start Time: 84| Finish Time: 97| Project Cost: 13
+Project Number: 17| Start Time: 90| Finish Time: 95| Project Cost: 5
+Project Number: 29| Start Time: 76| Finish Time: 94| Project Cost: 18
+Project Number: 18| Start Time: 87| Finish Time: 93| Project Cost: 6
+Project Number: 33| Start Time: 82| Finish Time: 93| Project Cost: 11
+Project Number: 21| Start Time: 78| Finish Time: 86| Project Cost: 8
+Project Number: 38| Start Time: 70| Finish Time: 86| Project Cost: 16
+Project Number: 3| Start Time: 75| Finish Time: 85| Project Cost: 10
+Project Number: 1| Start Time: 58| Finish Time: 74| Project Cost: 16
+Project Number: 35| Start Time: 54| Finish Time: 74| Project Cost: 20
+Project Number: 34| Start Time: 70| Finish Time: 73| Project Cost: 3
+Project Number: 13| Start Time: 59| Finish Time: 69| Project Cost: 10
+Project Number: 8| Start Time: 58| Finish Time: 68| Project Cost: 10
+Project Number: 9| Start Time: 43| Finish Time: 62| Project Cost: 19
+Project Number: 4| Start Time: 48| Finish Time: 61| Project Cost: 13
+Project Number: 24| Start Time: 57| Finish Time: 60| Project Cost: 3
+Project Number: 27| Start Time: 53| Finish Time: 60| Project Cost: 7
+Project Number: 20| Start Time: 38| Finish Time: 58| Project Cost: 20
+Project Number: 26| Start Time: 57| Finish Time: 58| Project Cost: 1
+Project Number: 36| Start Time: 51| Finish Time: 58| Project Cost: 7
+Project Number: 39| Start Time: 49| Finish Time: 58| Project Cost: 9
+Project Number: 14| Start Time: 47| Finish Time: 54| Project Cost: 7
+Project Number: 28| Start Time: 49| Finish Time: 54| Project Cost: 5
+Project Number: 19| Start Time: 35| Finish Time: 53| Project Cost: 18
+Project Number: 25| Start Time: 50| Finish Time: 52| Project Cost: 2
+Project Number: 10| Start Time: 40| Finish Time: 51| Project Cost: 11
+Project Number: 11| Start Time: 28| Finish Time: 47| Project Cost: 19
+Project Number: 31| Start Time: 34| Finish Time: 42| Project Cost: 8
+Project Number: 37| Start Time: 23| Finish Time: 40| Project Cost: 17
+Project Number: 15| Start Time: 18| Finish Time: 32| Project Cost: 14
+Project Number: 30| Start Time: 15| Finish Time: 28| Project Cost: 13
+Project Number: 40| Start Time: 22| Finish Time: 25| Project Cost: 3
+Project Number: 22| Start Time: 18| Finish Time: 19| Project Cost: 1
+Project Number: 2| Start Time: 12| Finish Time: 18| Project Cost: 6
+Project Number: 16| Start Time: 9| Finish Time: 18| Project Cost: 9
+Project Number: 12| Start Time: 6| Finish Time: 14| Project Cost: 8
+Project Number: 7| Start Time: 1| Finish Time: 3| Project Cost: 2
+
+The selected optimal projects calculated:
+Project Number: 15| Start Time: 18| Finish Time: 32| Project Cost: 14
+Project Number: 38| Start Time: 70| Finish Time: 86| Project Cost: 16
+Project Number: 37| Start Time: 23| Finish Time: 40| Project Cost: 17
+Project Number: 5| Start Time: 93| Finish Time: 111| Project Cost: 18
+Project Number: 29| Start Time: 76| Finish Time: 94| Project Cost: 18
+Project Number: 35| Start Time: 54| Finish Time: 74| Project Cost: 20
+Project Number: 20| Start Time: 38| Finish Time: 58| Project Cost: 20
+
+Group 1 Projects:
+Project Number: 15| Start Time: 18| Finish Time: 32| Project Cost: 14
+Project Number: 38| Start Time: 70| Finish Time: 86| Project Cost: 16
+Project Number: 37| Start Time: 23| Finish Time: 40| Project Cost: 17
+Project Number: 29| Start Time: 76| Finish Time: 94| Project Cost: 18
+
+Group 2 Projects:
+Project Number: 35| Start Time: 54| Finish Time: 74| Project Cost: 20
+Project Number: 20| Start Time: 38| Finish Time: 58| Project Cost: 20
+Project Number: 5| Start Time: 93| Finish Time: 111| Project Cost: 18
