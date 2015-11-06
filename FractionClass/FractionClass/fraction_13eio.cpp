@@ -189,14 +189,14 @@ bool operator!=(const Fraction& lFraction, const Fraction& rFraction) {
 }
 
 bool operator>(const Fraction& lFraction, const Fraction& rFraction) {
-	if ((lFraction.nmrtr / lFraction.dnmntr) > (rFraction.nmrtr / rFraction.dnmntr))
+	if (((float)lFraction.nmrtr /(float) lFraction.dnmntr) > ((float)rFraction.nmrtr / (float)rFraction.dnmntr))
 		return true;
 	else
 		return false;
 }
 
 bool operator<(const Fraction& lFraction, const Fraction& rFraction) {
-	if ((lFraction.nmrtr / lFraction.dnmntr) < (rFraction.nmrtr / rFraction.dnmntr))
+	if (((float)lFraction.nmrtr / (float)lFraction.dnmntr) < ((float)rFraction.nmrtr / (float)rFraction.dnmntr))
 		return true;
 	else
 		return false;
