@@ -147,12 +147,15 @@
   <ItemGroup>
     <Text Include="B+B 2015 Data 20151124 1226  Size 20.txt" />
     <Text Include="B+B 2015 Data 20151124 1226  Size 21.txt" />
+    <Text Include="Output.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="test2.txt" />
     <Text Include="testValues.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BnB01Knapsack.h" />
+    <ClInclude Include="BnB01Knapsack.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>

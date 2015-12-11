@@ -20,6 +20,7 @@
     <Text Include="B+B 2015 Data 20151124 1226  Size 21.txt" />
     <Text Include="B+B 2015 Data 20151124 1226  Size 20.txt" />
     <Text Include="test2.txt" />
+    <Text Include="Output.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">

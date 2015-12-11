@@ -1,0 +1,86 @@
+Name: Ese Okonofua SN: 10107285
+
+Data Output
+
+Output using Weaker LowerBound & Greedy Heuristic UpperBound:
+
+Instance With 20 Items
+Optimal Value: 832
+Optimal Value Identifiers: 7, 9, 12, 10, 1, 8, 11, 19, 13, 16, 2, 5, 4, 
+Partial solutions generated: 1736
+
+Instance With 21 Items
+Optimal Value: 806
+Optimal Value Identifiers: 13, 21, 8, 6, 5, 14, 11, 2, 18, 7, 20, 17, 
+Partial solutions generated: 2012
+
+Instance With 22 Items
+Optimal Value: 914
+Optimal Value Identifiers: 15, 22, 5, 14, 12, 18, 10, 20, 17, 19, 6, 11, 2, 
+Partial solutions generated: 26262
+
+Instance With 23 Items
+Optimal Value: 986
+Optimal Value Identifiers: 21, 13, 17, 14, 3, 5, 10, 4, 19, 6, 2, 8, 11, 9, 15, 
+Partial solutions generated: 42222
+
+Instance With 24 Items
+Optimal Value: 803
+Optimal Value Identifiers: 13, 18, 9, 8, 21, 15, 2, 14, 23, 22, 6, 3, 
+Partial solutions generated: 22982
+
+Instance With 25 Items
+Optimal Value: 1000
+Optimal Value Identifiers: 14, 4, 15, 8, 3, 22, 23, 12, 2, 11, 9, 24, 10, 5, 
+Partial solutions generated: 44600
+
+Instance With 26 Items
+Optimal Value: 963
+Optimal Value Identifiers: 19, 7, 14, 13, 22, 15, 23, 4, 11, 17, 3, 9, 18, 25, 26, 
+Partial solutions generated: 150000
+
+Instance With 27 Items
+Optimal Value: 898
+Optimal Value Identifiers: 27, 8, 10, 20, 4, 23, 25, 7, 1, 6, 14, 11, 
+Partial solutions generated: 259432
+
+Instance With 28 Items
+Optimal Value: 1025
+Optimal Value Identifiers: 27, 11, 21, 22, 26, 24, 18, 10, 1, 28, 2, 13, 9, 8, 
+Partial solutions generated: 296656
+
+Instance With 29 Items
+Optimal Value: 936
+Optimal Value Identifiers: 21, 27, 8, 15, 19, 18, 2, 20, 1, 13, 4, 7, 6, 24, 28, 10, 
+Partial solutions generated: 549152
+
+Instance With 30 Items
+Optimal Value: 817
+Optimal Value Identifiers: 19, 17, 7, 4, 3, 2, 1, 20, 26, 22, 13, 
+Partial solutions generated: 698666
+
+Instance With 31 Items
+Optimal Value: 901
+Optimal Value Identifiers: 10, 22, 6, 16, 20, 29, 15, 21, 14, 18, 7, 31, 30, 2, 
+Partial solutions generated: 374508
+
+Instance With 32 Items
+Optimal Value: 1024
+Optimal Value Identifiers: 17, 6, 1, 21, 11, 14, 23, 28, 32, 15, 29, 30, 13, 31, 
+Partial solutions generated: 238044
+
+Instance With 33 Items
+Optimal Value: 1039
+Optimal Value Identifiers: 10, 23, 11, 19, 9, 32, 24, 8, 20, 27, 16, 18, 29, 4, 1, 6, 
+Partial solutions generated: 1426470
+
+Instance With 34 Items
+Optimal Value: 958
+Optimal Value Identifiers: 26, 16, 19, 32, 2, 12, 7, 3, 23, 17, 4, 21, 34, 33, 29, 8, 
+Partial solutions generated: 779506
+
+Instance With 35 Items
+Optimal Value: 1183
+Optimal Value Identifiers: 9, 17, 18, 25, 23, 7, 14, 28, 8, 34, 11, 22, 16, 15, 1, 19, 35, 
+Partial solutions generated: 1898316
+
